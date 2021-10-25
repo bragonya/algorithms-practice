@@ -6,7 +6,7 @@ class MaxSubArraySum {
     fun maxSubArray(array: IntArray): Int {
 
 
-        var maxSum = 0
+        var maxSum = -100000
         var currentSum =-100000
 
 

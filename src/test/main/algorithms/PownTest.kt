@@ -19,7 +19,7 @@ class PownTest {
         calculateTime("func2") {
 
             assertEquals(
-                1024,
+                1024.0,
                 Pown().pow2(2.toDouble(),10)
             )
         }
@@ -50,7 +50,7 @@ class PownTest {
         calculateTime("func2") {
 
             assert(
-                0.000025005483472 == Pown().pow3(3.76050,-8)
+                2.500548347181903E-5 == Pown().pow3(3.76050,-8)
             )
         }
     }
