@@ -36,9 +36,9 @@ class NQueens {
     }
 
     fun validateState(state: MutableList<Int>, point: Pair<Int,Int>): Boolean{
-        if(state.contains(point.second))return false;
+        if(state.contains(point.second))return false // same column
         state.forEachIndexed { index, i ->
-            if(Math.abs(point.first - index) == Math.abs(point.second - i))return false
+            if(Math.abs(point.first - index) == Math.abs(point.second - i)) return false //same diagonal
         }
         return true
     }

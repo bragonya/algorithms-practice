@@ -1,6 +1,7 @@
 package main.algorithms
 
-import kotlin.math.min
+import java.lang.Integer.min
+
 
 // problem: https://leetcode.com/problems/container-with-most-water/
 class ContainerWithMostWater {

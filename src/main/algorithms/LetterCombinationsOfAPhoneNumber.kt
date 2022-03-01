@@ -1,7 +1,5 @@
 package main.algorithms
 
-import com.sun.javaws.exceptions.InvalidArgumentException
-
 // problem: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 class LetterCombinationsOfAPhoneNumber {
 

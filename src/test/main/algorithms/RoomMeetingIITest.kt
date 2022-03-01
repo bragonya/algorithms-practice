@@ -31,6 +31,16 @@ class RoomMeetingIITest{
             ),
             2
         )
+
+        assertEquals(
+            RoomMeetingII().numberOfRoomMeetingNeeded2(
+                arrayListOf(
+                    RoomMeetingII.Interval(13, 15),
+                    RoomMeetingII.Interval(1, 13),
+                )
+            ),
+            1
+        )
     }
 
 

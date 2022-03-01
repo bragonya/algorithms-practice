@@ -13,7 +13,7 @@ class FruitsIntoBaskets {
             }
 
             while (hashMap.size > k){
-                val removedItem = hashMap.values.min()
+                val removedItem = hashMap.values.minOrNull()
                 start = removedItem!! + 1
                 hashMap.values.remove(removedItem)
             }

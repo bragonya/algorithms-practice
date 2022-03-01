@@ -28,7 +28,7 @@ class RoomMeetingII {
     fun numberOfRoomMeetingNeeded2(intervals: ArrayList<Interval>) : Int {
 
         val flattenList = intervals.flatMap {
-            listOf(it.start to false, it.end to true)
+            listOf(it.start.toDouble() to false, it.end -0.01 to true)
         }
             .sortedBy { (point, _) -> point }
 
