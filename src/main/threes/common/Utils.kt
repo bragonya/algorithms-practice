@@ -22,3 +22,18 @@ fun BinaryThree.print(){
 
     }
 }
+
+
+fun Node.generatePreOrder(): IntArray{
+        val output = mutableListOf<Int>()
+        fun helper(node: Node?) {
+            if(node == null) return
+            output.add(node.value)
+            helper(node.left)
+            helper(node.right)
+        }
+
+        helper(this)
+
+        return output.toIntArray()
+}
